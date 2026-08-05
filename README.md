@@ -20,7 +20,7 @@ Go to line 476 and add in your office locations. Add or remove amount of offices
    #     "New Site name" = @{
    #     StreetAddress = "123 High Street"
    #    City          = "Christchurch"
-   #    State         = "Canterbury?"
+   #    State         = "Canterbury"
    #     Country       = "New Zealand"
    #  }
 
