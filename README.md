@@ -1,86 +1,10 @@
-Place the userroles.csv file in a sharepoint location and sync it through Onedrive so all people who are going to use it have access to the source of roles.  Or if its just you  store it locally and update the location.
-Line 524 is currently set to read the persons userprofile "C:\users"Username"   feel free to change that to where you want but it requires the csv to work
+Step 1. Place the UserRoles.csv file where you want it (if its in sharepoint  you need to sync it via onedrive. If in SharePoint then multiple people can use the same source file).
+Step 2. Update the Role_builder.ps1 file with the above location and clear the example content.
+Step 3. Run the Role Builder.ps1 file to populate your current org roles (You will the need to filter them down and choose one of each role to use as a template)
+Step 4. Update the Userroles.csv file location in the UserMangagement.ps1 file (Line 524)
+Step 5. Update your Global Config information in the UserManagement.ps1 file (Line 13)
+Step 6. Update your Office / Location data within the UserManagement.ps1 file ( from line 476)
+Step 7. Update your company name on  line 1338 (this will show it at the top of the app "
 
-
-Update Global config Line 13
-
-# ============================================================
-# GLOBAL CONFIG
-# ============================================================
-$TenantDomain          = "#Domain#"
-$DefaultUsageLocation = "#Country"
-$DefaultCompany       = "#Companyname#"
-
-Go to line 476 and add in your office locations. Add or remove amount of offices based on your company 
-
-# ============================================================
-# OFFICE / LOCATION MAP
-
-#To add a new location copy another one and change the details.
-   #     "New Site name" = @{
-   #     StreetAddress = "123 High Street"
-   #    City          = "Christchurch"
-   #    State         = "Canterbury"
-   #     Country       = "New Zealand"
-   #  }
-
-# ============================================================
-
-
-$OfficeMap = @{
-    "Site 1" = @{
-        StreetAddress = "Street Address 1"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-    "Site 2" = @{
-        StreetAddress = "Street Address 2"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-    "Site 3" = @{
-        StreetAddress = "Street Address 3"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-    "Site 4" = @{
-        StreetAddress = "Street Address 4"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-    "Site 5" = @{
-        StreetAddress = "Street Address 5"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-}
-
-
-
-To add more locations simply copy  between the " "  below  and name it accordingly.
-"
-   "Site 2" = @{
-        StreetAddress = "Street Address 2"
-        City          = "City"
-        State         = "State"
-        Country       = "Country"
-    }
-"
-
-
-Update line 1338   with your company name to add title at top of app
-Update #Companyname# with your company name
-# ============================================================
-# MAIN FORM
-# ============================================================
-$form = New-Object System.Windows.Forms.Form
-$form.Text = "#Companyname# - Entra / Microsoft 365 User Management"
-
-
-
-
+All the hard work is now done and you can speed up your User Account Creation and Transfers.  
+Everyone's exit processes are different, so feel free to finish this part yourself or leave it blank.
