@@ -13,7 +13,6 @@ $DefaultCompany       = "#Companyname#"
 
 Go to line 476 and add in your office locations. Add or remove amount of offices based on your company 
 
-
 # ============================================================
 # OFFICE / LOCATION MAP
 
@@ -26,6 +25,8 @@ Go to line 476 and add in your office locations. Add or remove amount of offices
    #  }
 
 # ============================================================
+
+
 $OfficeMap = @{
     "Site 1" = @{
         StreetAddress = "Street Address 1"
