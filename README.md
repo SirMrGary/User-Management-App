@@ -1,4 +1,4 @@
-Download the ZIP to get all the file easily.
+Download the ZIP to get all the files.
 
 Step 1. Place the UserRoles.csv file where you want it (if its in sharepoint  you need to sync it via onedrive. If in SharePoint then multiple people can use the same source file).
 
