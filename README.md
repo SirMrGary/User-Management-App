@@ -12,8 +12,11 @@ Step 5. Update your Global Config information in the UserManagement.ps1 file (Li
 
 Step 6. Update your Office / Location data within the UserManagement.ps1 file ( from line 476)
 
-Step 7. Update your company name on  line 1338 (this will show it at the top of the app "
+Step 7. Update the group name to your m365 licence group in UserManagement.ps1 file (line 623) (ours was LIC-M365-Business-Premium-Defender-Suite)
 
-All the hard work is now done and you can speed up your User Account Creation and Transfers.  
+Step 8. Update your company name on  line 1338 (this will show it at the top of the app)
+
+All the hard work is now done and you can speed up your User Account Creation and Transfers. User Onboarding / Role Transfers now take less then 5 minutes. 
+In the onboarding there is a 120 seconds wait while your licensing applies 
 
 Everyone's exit processes are different, so feel free to finish this part yourself or leave it blank.
