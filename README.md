@@ -1,3 +1,5 @@
+Download the ZIP to get all the file easily.
+
 Step 1. Place the UserRoles.csv file where you want it (if its in sharepoint  you need to sync it via onedrive. If in SharePoint then multiple people can use the same source file).
 
 Step 2. Update the Role_builder.ps1 file with the above location and clear the example content.
